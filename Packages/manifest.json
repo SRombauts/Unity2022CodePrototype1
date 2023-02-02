@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.spoiledcat.git.api": "file:C:/Workspace/Git-for-Unity/upm-ci~/packages/com.spoiledcat.git.api-1.0.12-preview-ge0a52aba83.tgz",
+    "com.spoiledcat.git.ui": "file:C:/Workspace/Git-for-Unity/upm-ci~/packages/com.spoiledcat.git.ui-1.0.12-preview-ge0a52aba83.tgz",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.2",
