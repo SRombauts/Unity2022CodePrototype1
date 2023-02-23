@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnOponentCars : MonoBehaviour
 {
-    public GameObject spawnPrefab;      // prefab to spawn
+    public GameObject[] spawnPrefabs;   // prefabs to spawn randomly
     public float spawnInterval = 3.0f;  // interval of times in seconds between spawns
     public float spawnDelay = 1.0f;     // initial delay before the first spawn
 
@@ -23,7 +23,12 @@ public class SpawnOponentCars : MonoBehaviour
         {
             spawnTimer = 0.0f;
 
-            Instantiate(spawnPrefab, transform.position, transform.rotation);
+            if (spawnPrefabs.Length > 0)
+            {
+                // pick a random number to spawn one of the car
+                int i = Random.Range(0, spawnPrefabs.Length);
+                Instantiate(spawnPrefabs[i], transform.position, transform.rotation);
+            }
         }
     }
 }
