@@ -436,7 +436,8 @@ GameObject:
   - component: {fileID: 3383130}
   - component: {fileID: 2359104}
   - component: {fileID: 3313442307395238052}
-  - component: {fileID: 1284441705041166386}
+  - component: {fileID: 1968630837}
+  - component: {fileID: 1968630838}
   m_Layer: 0
   m_Name: Veh_Ute_Red_Z
   m_TagString: Untagged
@@ -462,7 +463,7 @@ Transform:
   - {fileID: 431296}
   - {fileID: 3202001632766843001}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3383130
 MeshFilter:
@@ -536,7 +537,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a7dca03bf1b6f9b46b6916fa5450f775, type: 3}
---- !u!54 &1284441705041166386
+--- !u!114 &1968630837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6714b1d47600014c84a90577c00147f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxForwardSpeed: 20
+  maxRotationSpeed: 50
+--- !u!54 &1968630838
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -544,7 +559,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178130}
   serializedVersion: 4
-  m_Mass: 1200
+  m_Mass: 2000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
