@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     // speed settings
     public float maxForwardSpeed = 20.0f;
     public float maxRotationSpeed = 50.0f;
+    public string forwardAxis;
+    public string lateralAxis;
 
     public Camera thirdPersonCamera;
     public Camera driverCamera;
@@ -23,8 +25,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame (before LateUpdate that we user for the camera)
     void Update()
     {
-        float forwardInput = Input.GetAxis("Vertical");
-        float lateralInput = Input.GetAxis("Horizontal");
+        float forwardInput = Input.GetAxis(forwardAxis);
+        float lateralInput = Input.GetAxis(lateralAxis);
 
         float forwardSpeed = forwardInput * maxForwardSpeed;
         float rotationSpeed = lateralInput * maxRotationSpeed * forwardInput;

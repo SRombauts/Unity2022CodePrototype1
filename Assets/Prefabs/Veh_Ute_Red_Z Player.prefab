@@ -93,15 +93,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_Name
-      value: Player Vehicle
+      value: Player Vehicle 1
       objectReference: {fileID: 0}
     - target: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -199,8 +199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxForwardSpeed: 20
   maxRotationSpeed: 50
-  forwardAxis: Vertical
-  lateralAxis: Horizontal
+  forwardAxis: Vertical 1
+  lateralAxis: Horizontal 1
   thirdPersonCamera: {fileID: 0}
   driverCamera: {fileID: 986708100}
   switchCameraKey: 32
