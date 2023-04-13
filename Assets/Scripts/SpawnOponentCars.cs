@@ -10,6 +10,7 @@ public class SpawnOponentCars : MonoBehaviour
 
     private float spawnTimer = 0.0f;
 
+    // Start is called before the first frame update
     void Start()
     {
         spawnTimer = spawnInterval - spawnDelay;
